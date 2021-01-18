@@ -1,8 +1,13 @@
+
+.body { background: url(./images/background.jpg); }
+
+
 .Ads__header {
     padding: 24px;
     font-family: "Roboto", sans-serif;
-    border-bottom: 1px solid #f1f1f1;
-    background-color: #FFE4B5;
+    border-bottom: 1px solid #000000;
+    background-color: #817D9B;
+    border-radius: 30px;
 }
 
 .Header__title {
@@ -16,14 +21,11 @@
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    padding: 8px 12px;
+    padding: 8px 20px;
     border-radius: 7px;
-    background: -moz-linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#D0ECF4), to(#D0ECF4), color-stop(0.5, #5BC9E1));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: 1px solid #666;
+    background: -moz-linear-gradient(#312965, #666374);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#312965), to(#666374));
+    border: 6px;
 }
 
 .Ads__content {
@@ -32,11 +34,30 @@
 
 .Content__box {
     display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+    border: dashed;
+    padding: 15px;
+    color: #8A2BE2;
 }
 
-.Box__info {}
+.Box__info {
+    color: #E6E6FA;
+    font-size: 210%;
+    font-weight: 700;
+ ;
+}
 
-.Box__name {}
+.Box__name {
+    color: #D8BFD8;
+    font-size: 105%;
+    font-weight: 600;
+}
 
-.Box__phone {}
+.Box__phone {
+    color: #DDA0DD;
+    font-size: 105%;
+    font-weight: 600;
+    
+}
 
