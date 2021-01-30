@@ -26,6 +26,18 @@
     background: -moz-linear-gradient(#312965, #666374);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#312965), to(#666374));
     border: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Header__button:hover {
+    margin-top: 1px;
+  
+  /*Тень*/
+    -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+  
 }
 
 .Ads__content {
@@ -61,3 +73,76 @@
     
 }
 
+.Modal__window {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Modal__mask {
+    background-color: rgba(8, 1, 1, 0.753);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.Modal__form {
+    padding: 24px;
+    border-radius: 10px;
+    background-color: white;
+    display: inline-block;
+    z-index: 2;
+}
+
+.Form__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.Form__content {
+
+
+}
+
+.Content__field {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Content__field label {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.Content__field input {
+    display: block;
+    width: 227px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.Content__field textarea {
+    display: block;
+    width: 227px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.Content__field button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 0;
+    display: block;
+    width: 100%;
