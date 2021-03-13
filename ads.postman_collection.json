@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e3a94059-69e4-4e56-bfa0-f49a4ac65bf5",
+		"_postman_id": "cebfb5d6-dc97-484c-a421-7177dca18dcc",
 		"name": "ads",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -34,6 +34,92 @@
 				"header": [],
 				"url": {
 					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "db",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/db.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"db.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Текст объявления",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Кирилл",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+79834585541",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api.php?add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "add",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api.php?all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "all",
+							"value": null
+						}
+					]
 				}
 			},
 			"response": []
